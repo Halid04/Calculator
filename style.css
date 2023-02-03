@@ -1,0 +1,104 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #578480;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 30%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 10px rgba(0, 0, 0, .5);
+    transition: box-shadow .5s;
+}
+.container:hover{
+    box-shadow: 8px 8px 10px 15px rgba(0, 0, 0, .5);
+}
+
+.display{
+    width: 100%;
+    height: 23%;
+    background-color: #F4BE51;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    cursor: auto;
+    width: 90%;
+    height: 60%;
+    border: 0;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .5);
+}
+input:focus{
+    outline:none;
+}
+
+
+.keys{
+    width: 100%;
+    height: 75%;
+    background-color: #628973;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.keys button{
+    width: 20%;
+    height: 15%;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, .5);
+    transition: transform .3s;
+}
+.keys button:hover{
+    transform: scale(1.04);
+}
+.keys button:active{
+    transform: scale(.95);
+}
+
+.number{
+    background-color: #B3F2C9;
+}
+
+.operators{
+    background-color: #F9B1A1;
+}
+
+.signs{
+    background-color: #F4BE51;
+}
+
+.multiply{
+    background-image: url("icon/close.png");
+    background-repeat: no-repeat;
+    background-size: 10px, 10px;
+    background-position: center;
+}
+
+.division{
+    background-image: url("icon/divide.png");
+    background-repeat: no-repeat;
+    background-size: 12px, 12px;
+    background-position: center;
+}
